@@ -1,0 +1,27 @@
+////////////////////////
+/// Chapitre 4 - TD1 ///
+////////////////////////
+
+/// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction
+/// par "main"
+// Les fonctions "ch4td1questionN" remplace les "main".
+
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
+
+//////////////////
+/// Question 1 ///
+//////////////////
+
+//////////////////
+/// Question 2 ///
+//////////////////
+
+//////////////////
+/// Question 3 ///
+//////////////////
+
+/////////////////////////
+/// By Guillemot Hugo ///
+/////////////////////////
