@@ -1,0 +1,29 @@
+  ////////////////////////
+ /// Chapitre 4 - TD1 ///
+////////////////////////
+
+/// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction par "main"
+// Les fonctions questionN remplace les main.
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+    //////////////////
+   /// Question 1 ///
+  //////////////////
+
+
+    //////////////////
+   /// Question 2 ///
+  //////////////////
+
+
+    //////////////////
+   /// Question 3 ///
+  //////////////////
+
+
+    /////////////////////////
+   /// By Guillemot Hugo ///
+  /////////////////////////
