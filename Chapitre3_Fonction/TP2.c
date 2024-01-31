@@ -155,7 +155,7 @@ void trier4(int tab[], int taille) {
   }
 }
 
-int main() {
+int ch3tp2question6() {
   int tab[Taillemax];
   int taille;
 
