@@ -57,9 +57,29 @@
 /// Question 2 ///
 //////////////////
 
-//
+//Soit P un pointeur qui 'pointe' sur un tableau A:
+//int A[] = {12, 23, 34, 45, 56, 67, 78, 89, 90}; int *P;
+//P = A;
+//Quelles valeurs ou adresses fournissent ces //expressions:
+//a) *P+2
+//b) *(P+2)
+//c) &P+1
+//d) &A[4]-3
+//e) A+3
+//f) &A[7]-P
+//g) P+(*P-10)
+//h) (P+(P+8)-A[7])
 
 // Réponse
+
+//a) *P+2 : Cela renvoie la valeur de la case pointée par P, puis on ajoute 2
+//b) *(P+2) : Cela renvoie la valeur de la case pointée par P+2
+//c) &P+1 : Cela renvoie l'adresse de P+1
+//d) &A[4]-3 : Cela renvoie la valeur qui appartient a l'adresse de A[4] - 3 ( 54 - 3 = 51))
+//e) A+3 : Cela ajoute 3 a la varible A 
+//f) &A[7]-P : Cela donnera la valeur a l'adresse 7 du tableau A, puis soustraira l'adresse pointée par P.
+//g) P+(*P-10) : Cela ajoutera la valeur à l'emplacement mémoire pointé par P moins 10 à la valeur de P.
+//h) (P+(P+8)-A[7]) : Cela donnera la valeur à l'emplacement mémoire pointé par P plus la valeur à l'emplacement mémoire pointé par P+8 moins la valeur de A[7].
 
 //////////////////
 /// Question 3 ///
@@ -82,23 +102,26 @@ void saisie3(int *val, int *nb) {
 
 void affiche3(int *val, int nb) {
     for (int i = 0; i < nb; i++) {
-        printf("%d\n", *val);
+        printf("%d ,", *val);
         val++;
     }
 }
 
-int main() {
+int ch4td1question3() {
+  
     int valeurs[20];
     int nombreDeValeurs;
-
 
     saisie3(valeurs, &nombreDeValeurs);
 
     int *pValeurs = valeurs;
-
+  
+    printf("\n");
+    printf("Voici les valeurs saisies :\n ");
+  
     affiche3(pValeurs, nombreDeValeurs);
 
-    printf("%d\n", nombreDeValeurs);
+    printf("vous avez saisie %d valeur", nombreDeValeurs);
 
     return 0;
 }

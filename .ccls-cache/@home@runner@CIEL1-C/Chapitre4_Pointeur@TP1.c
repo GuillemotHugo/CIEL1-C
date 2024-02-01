@@ -32,8 +32,20 @@ int ch4tp1question1() {
 //////////////////
 /// Question 2 ///
 //////////////////
+int trie2(tab6) {
+  
+}
 
-int ch4tp1question2() {}
+
+int main() {
+
+  int tab[6];
+  int *ptab = tab;
+
+  for (int i = 0; i < 6; i++) {
+    scanf("%d", tab[i]);
+  }
+}
 
 //////////////////
 /// Question 3 ///
