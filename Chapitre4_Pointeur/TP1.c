@@ -15,7 +15,7 @@
 //////////////////
 
 // Réponse
-int ch4tp1question1() {
+int main() {
 
   float adr1 = -45.78;
   float adr2 = -638.89;
@@ -23,8 +23,8 @@ int ch4tp1question1() {
   float *padr1 = &adr1;
   float *padr2 = &adr2;
 
-  printf("a = %f et l'adresse de a est : %p\n", adr1, padr1);
-  printf("b = %f et l'adresse de b est : %p\n", adr2, padr2);
+  printf("a = %f et l'adresse de a est : %p.\n", adr1, padr1);
+  printf("b = %f et l'adresse de b est : %p.\n", adr2, padr2);
 
   return 0;
 }

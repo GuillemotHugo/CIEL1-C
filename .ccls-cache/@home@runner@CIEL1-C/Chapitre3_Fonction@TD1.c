@@ -1,21 +1,20 @@
-    ////////////////////////
-   /// Chapitre 3 - TD1 ///
-  ////////////////////////
+////////////////////////
+/// Chapitre 3 - TD1 ///
+////////////////////////
 
-// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction par "main"
-// Les fonctions "ch3td1exerciceN" remplace les "main".
+// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction par
+// "main" Les fonctions "ch3td1exerciceN" remplace les "main".
 
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
+//////////////////
+/// Exercice 1 ///
+//////////////////
 
-    //////////////////
-   /// Exercice 1 ///
-  //////////////////
-
-//Utilisation de variables locales.
-//Quels résultats donne ce programme.
+// Utilisation de variables locales.
+// Quels résultats donne ce programme.
 
 // Réponse
 
@@ -23,37 +22,55 @@
 // dans la fonction demo(), x=88 et y=99
 // après voir appele demo(), x=1 et y=2
 
+//////////////////
+/// Exercice 2 ///
+//////////////////
 
-    //////////////////
-   /// Exercice 2 ///
-  //////////////////
-
-// 1.Ecrivez le prototype d’une fonction fait_le() qui a trois arguments de type char et qui renvoie une valeur de type float au programme appelant.
-// 2.Ecrivez le prototype d’une fonction affiche() qui a un seul argument de type int et qui ne renvoie rien au programme appelant.
-// 3.Quels type de valeur renvoient les fonctions suivantes et quels types d’arguments elles s’attendent à recevoir:
-//                  a.int affiche_erreur(float err_nbr) ; b.long lit_enreg(int rec_nbr,int size) ;
+// 1.Ecrivez le prototype d’une fonction fait_le() qui a trois arguments de type
+// char et qui renvoie une valeur de type float au programme appelant. 2.Ecrivez
+// le prototype d’une fonction affiche() qui a un seul argument de type int et
+// qui ne renvoie rien au programme appelant. 3.Quels type de valeur renvoient
+// les fonctions suivantes et quels types d’arguments elles s’attendent à
+// recevoir:
+//                  a.int affiche_erreur(float err_nbr) ; b.long lit_enreg(int
+//                  rec_nbr,int size) ;
 
 // Réponse
 
 // 1. float fait_le(char c1, char c2, char c3);
 // 2. void affiche(int v1);
-// 3. A. La fonction affiche_erreur retourne une valeur de type int et attends 1 paramètres de type float.
-//		B. La fonction lit_enreg retourne une valeur de type long et attends 2  paramètres de type int.
+// 3. A. La fonction affiche_erreur retourne une valeur de type int et attends 1
+// paramètres de type float.
+//		B. La fonction lit_enreg retourne une valeur de type long et
+//attends 2  paramètres de type int.
 
+//////////////////
+/// Exercice 3 ///
+//////////////////
 
-    //////////////////
-   /// Exercice 3 ///
-  //////////////////
+// 1. Ecrivez une fonction qui reçoit 2 réels en arguments et qui renvoie la
+// valeur correspondant au produit de ces deux nombres. Dans le programme
+// principal vous demanderez à l’utilisateur d’entrer deux valeurs que vous
+// enverrez à la fonction décrite ci-dessus.
 
-// 1. Ecrivez une fonction qui reçoit 2 réels en arguments et qui renvoie la valeur correspondant au produit de ces deux nombres. Dans le programme principal vous demanderez à l’utilisateur d’entrer deux valeurs que vous enverrez à la fonction décrite ci-dessus.
+// 2. Ecrivez une fonction qui reçoit 2 entiers en arguments et qui divise le
+// 1er par le 2nd si celui-ci est différent de 0 puis renvoie le résultat au
+// programme appelant. Dans le programme principal vous demanderez à
+// l’utilisateur d’entrer deux valeurs que vous enverrez à la fonction décrite
+// ci-dessus.
 
-// 2. Ecrivez une fonction qui reçoit 2 entiers en arguments et qui divise le 1er par le 2nd si celui-ci est différent de 0 puis renvoie le résultat au programme appelant. Dans le programme principal vous demanderez à l’utilisateur d’entrer deux valeurs que vous enverrez à la fonction décrite ci-dessus.
+// 3. Ecrivez une fonction qui appelle les fonctions 1 et 2 et qui affiche les
+// différents résultats. Dans le programme principal vous demanderez à
+// l’utilisateur d’entrer quatre valeurs que vous enverrez à la fonction décrite
+// ci-dessus.
 
-// 3. Ecrivez une fonction qui appelle les fonctions 1 et 2 et qui affiche les différents résultats. Dans le programme principal vous demanderez à l’utilisateur d’entrer quatre valeurs que vous enverrez à la fonction décrite ci-dessus.
+// 4. Ecrivez un programme qui utilise une fonction pour calculer la moyenne de
+// 5 valeurs de type float, données par l’utilisateur dans le programme
+// principal.
 
-//4. Ecrivez un programme qui utilise une fonction pour calculer la moyenne de 5 valeurs de type float, données par l’utilisateur dans le programme principal.
-
-//5. Ecrivez une fonction récurrente qui calcule le résultat de la valeur 3 à la puissance du nombre choisi par l’utilisateur. Par exemple si le nombre 4 est tapé par l’utilisateur, le résultat sera 81.
+// 5. Ecrivez une fonction récurrente qui calcule le résultat de la valeur 3 à
+// la puissance du nombre choisi par l’utilisateur. Par exemple si le nombre 4
+// est tapé par l’utilisateur, le résultat sera 81.
 
 // Réponse
 
@@ -72,7 +89,8 @@ int ch3td1exercice3_1() {
   scanf("%f", &nombre1);
   printf("Entrez un autre nombre\n");
   scanf("%f", &nombre2);
-  printf("Le produit des nombre que vous avez rentré est %f", produit3_1(nombre1, nombre2));
+  printf("Le produit des nombre que vous avez rentré est %f",
+         produit3_1(nombre1, nombre2));
   return 0;
 }
 
@@ -91,7 +109,8 @@ int ch3td1exercice3_2() {
   scanf("%d", &nombre1);
   printf("Entrez un autre nombre\n");
   scanf("%d", &nombre2);
-  printf("la division des 2 nombre que vous avez entré est %f", divise3_2(nombre1, nombre2));
+  printf("la division des 2 nombre que vous avez entré est %f",
+         divise3_2(nombre1, nombre2));
   return 0;
 }
 
@@ -108,7 +127,7 @@ float divise3_3(int d1, int d2) {
 }
 
 int ch3td1exercice3_3() {
-  
+
   float p1;
   float p2;
   int d1;
@@ -125,7 +144,6 @@ int ch3td1exercice3_3() {
 
   printf("le résultat de la multiplication est %f\n", produit3_3(p1, p2));
   printf("le résultat de la division est %f\n", divise3_3(d1, d2));
-  
 }
 
 // 4.
@@ -142,7 +160,8 @@ int ch3td1exercice3_4() {
   scanf("%f", &v3);
   scanf("%f", &v4);
   scanf("%f", &v5);
-  printf("la moyenne de ces 5 nombres est %f\n", moyenne3_4(v1, v2, v3, v4, v5));
+  printf("la moyenne de ces 5 nombres est %f\n",
+         moyenne3_4(v1, v2, v3, v4, v5));
 }
 
 // 5.
@@ -159,7 +178,6 @@ int ch3td1exercice3_5() {
   printf(" le résultat est %d", puissancedetrois3_5(exposant));
 }
 
-
-    /////////////////////////
-   /// By Guillemot Hugo ///
-  /////////////////////////
+/////////////////////////
+/// By Guillemot Hugo ///
+/////////////////////////
