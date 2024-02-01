@@ -15,7 +15,7 @@
 //////////////////
 
 // Réponse
-int main() {
+int ch4tp1question1() {
 
   float adr1 = -45.78;
   float adr2 = -638.89;
