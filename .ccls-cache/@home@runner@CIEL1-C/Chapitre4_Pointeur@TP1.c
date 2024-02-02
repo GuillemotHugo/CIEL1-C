@@ -41,23 +41,55 @@ int ch4tp1question1() {
 /// Question 2 ///
 //////////////////
 
-// Soit adr_deb un pointeur sur entiers, vous ferez en sorte que adr_deb pointe
-// sur un emplacement mémoire suffisant afin de stocker 6 entiers donnés par
-// l’utilisateur. Puis vous rangerez ces valeurs dans l’ordre croissant.
-// Rechercher le maximum, l'afficher ainsi que son adresse et sa position.
+// Soit adr_deb un pointeur sur entiers, vous ferez en sorte que adr_deb pointe sur un emplacement mémoire suffisant afin de stocker 6 entiers donnés par l’utilisateur. Puis vous rangerez ces valeurs dans l’ordre croissant. Rechercher le maximum, l'afficher ainsi que son adresse et sa position.
 
 // Réponse
 
-int trie2(tab6) {}
+void trie2(int tab[]) {
+  int i, j, tmp;
+  for (i = 0; i < 6; i++) {
+    for (j = i + 1; j < 6; j++) {
+      if (tab[i] > tab[j]) {
+        tmp = tab[i];
+        tab[i] = tab[j];
+        tab[j] = tmp;
+      }
+    }
+  }
+}
 
-int main() {
+int maximum(int tab[]) {
+  int max = tab[0];
+  for (int i = 0; i < 6; i++)   {
+    if (tab[i] > max) {
+      max = tab[i];
+    }  
+  }
+  return max;
+}
+
+void montre2(int tab[]) {
+    for (int i = 0; i < 6; i++) {
+        printf("%d : %d son adresse est %p\n", i, tab[i], &tab[i]);
+    }
+}
+  
+int ch4tp1question2() {
 
   int tab[6];
-  int *ptab = tab;
+  int *adr_deb = tab;
 
   for (int i = 0; i < 6; i++) {
-    scanf("%d", tab[i]);
+    scanf("%d", &tab[i]);
   }
+
+  trie2(tab);
+  printf("Voici le tableau ranger :\n");
+  montre2(tab);
+
+  printf("Le maximum est %d et son adresse est %p\n", maximum(tab), &maximum);
+  
+  printf("Fin");
 }
 
 //////////////////
@@ -65,12 +97,22 @@ int main() {
 //////////////////
 
 // Soit une variable de type char * , écrire un programme qui saisit une chaîne
-// de caractères et qui la stocke dans cette variable, puis qui affiche les
-// éléments de la chaîne caractère par caractère avec leur adresse .
+// de caractères et qui la stocke dans cette variable, puis qui affiche les éléments de la chaîne caractère par caractère avec leur adresse .
 
 // Réponse
 
-int ch4tp1question3() {}
+int main() {
+  char chaine[100];
+  char *adr_chaine = chaine;
+
+  fgets(chaine, 100, stdin);
+
+  for (int i = 0; i < strlen(chaine) -1 ; i++) {
+    printf("%d : '%c' son adresse est %p\n", i, chaine[i], &chaine[i]);
+  }
+  
+  return 0;
+}
 
 //////////////////
 /// Question 4 ///
