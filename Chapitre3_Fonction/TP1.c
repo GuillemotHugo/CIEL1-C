@@ -2,10 +2,6 @@
 /// Chapitre 3 - TP1 ///
 ////////////////////////
 
-// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction par
-// "main"
-// Les fonctions "ch3tp1questionN" remplace les "main".
-
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
@@ -22,20 +18,22 @@
 
 // Réponse
 
-int puissance1(int x, int y) {
+/*
+int puissance(int x, int y) {
   int resultat = pow(x, y);
   return resultat;
 }
 
-int ch3tp1question1() {
+int main() {
   int x, y;
   printf("Entrez les valeurs suivante : x serra l'exposé et y l'exposant\n");
   printf("Entrez la valeur de x\n");
   scanf("%d", &x);
   printf("Entrez la valeur de y\n");
   scanf("%d", &y);
-  printf("le résultat est %d", puissance1(x, y));
+  printf("le résultat est %d", puissance(x, y));
 }
+*/
 
 //////////////////
 /// Question 2 ///
@@ -48,16 +46,18 @@ int ch3tp1question1() {
 
 // Réponse
 
+/*
 void affiche2(int *t) {
   for (int i = 0; i < 10; i++) {
     printf("La position %d du tableau a pour valeur %d\n", i, t[i]);
   }
 }
 
-int ch3tp1quesion2() {
+int main() {
   int tab[10] = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512};
   affiche2(tab);
 }
+*/
 
 //////////////////
 /// Question 3 ///
@@ -71,7 +71,8 @@ int ch3tp1quesion2() {
 
 // Réponse
 
-float min3(float *tab) {
+/*
+float min(float *tab) {
   float vmin = tab[0];
   for (int i = 0; i < 8; i++) {
     if (tab[i] < vmin) {
@@ -81,7 +82,7 @@ float min3(float *tab) {
   return vmin;
 }
 
-float max3(float *tab) {
+float max(float *tab) {
   int vmax = tab[0];
   for (int i = 0; i < 8; i++) {
     if (tab[i] > vmax) {
@@ -91,11 +92,12 @@ float max3(float *tab) {
   return vmax;
 }
 
-int ch3tp1question3() {
+int main() {
   float tab[8] = {1.6, -6.9, 9.67, 5.90, 345, -23.6, 78, 34.6};
-  printf("Le minimum est %f\n", min3(tab));
-  printf("Le maximum est %f\n", max3(tab));
+  printf("Le minimum est %f\n", min(tab));
+  printf("Le maximum est %f\n", max(tab));
 }
+*/
 
 //////////////////
 /// Question 4 ///
@@ -106,7 +108,8 @@ int ch3tp1question3() {
 
 // Réponse
 
-int fonction4(int v1, int v2) {
+/*
+int pgcd(int v1, int v2) {
   while (v2 != 0) {
     int mémoire = v2;
     v2 = v1 % v2;
@@ -115,18 +118,19 @@ int fonction4(int v1, int v2) {
   return v1;
 }
 
-int ch3tp1question4() {
+int main() {
   int v1, v2;
   printf("Entrez 2 valeurs, nous allons calculer leurs diviseur commun le plus "
          "grand\n");
   scanf("%d", &v1);
   scanf("%d", &v2);
-  int pgcd = fonction4(v1, v2);
+  int vpgcd = pgcd(v1, v2);
 
-  printf("Le PGCD de %d et %d est %d\n", v1, v2, pgcd);
+  printf("Le PGCD de %d et %d est %d\n", v1, v2, vpgcd);
 
   return 0;
 }
+*/
 
 //////////////////
 /// Question 5 ///
@@ -138,7 +142,8 @@ int ch3tp1question4() {
 
 // Réponse
 
-unsigned int fractionelle5(unsigned int n) {
+/*
+unsigned int factorielle(unsigned int n) {
   if (n == 0) {
     return 1;
   }
@@ -149,14 +154,15 @@ unsigned int fractionelle5(unsigned int n) {
   return resultat;
 }
 
-int ch2tp1quesion5() {
+int main() {
   unsigned int n;
   printf("Entrez un nombre, nous allons calculer sa factorielle\n");
   scanf("%u", &n);
-  printf("Le résultat est %u\n", fractionelle5(n));
+  printf("Le résultat est %u\n", factorielle(n));
 
   return 0;
 }
+*/
 
 //////////////////
 /// Question 6 ///
@@ -169,6 +175,7 @@ int ch2tp1quesion5() {
 
 // Réponse
 
+/*
 int inverserchaine(char *chaine) {
   int e = 0;
   char chaineinverser[9999];
@@ -179,12 +186,13 @@ int inverserchaine(char *chaine) {
   return chaineinverser;
 }
 
-int ch3tp1question6() {
+int main() {
   char chaine[99999];
   printf("Entrez une chaine de caractère\n");
   fgets(chaine, sizeof(chaine), stdin);
   printf("voici le texte inversé : %s", inverserchaine(chaine));
 }
+*/
 
 //////////////////////////
 /// By Guillemot Hugo ///

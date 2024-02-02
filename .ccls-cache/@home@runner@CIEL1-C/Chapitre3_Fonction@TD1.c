@@ -2,9 +2,6 @@
 /// Chapitre 3 - TD1 ///
 ////////////////////////
 
-// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction par
-// "main" Les fonctions "ch3td1exerciceN" remplace les "main".
-
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
@@ -76,12 +73,13 @@
 
 // 1.
 
-float produit3_1(float nombre1, float nombre2) {
+/*
+float produit(float nombre1, float nombre2) {
   float resultat = nombre1 * nombre2;
   return resultat;
 }
 
-int ch3td1exercice3_1() {
+int main() {
 
   float nombre1;
   float nombre2;
@@ -90,13 +88,15 @@ int ch3td1exercice3_1() {
   printf("Entrez un autre nombre\n");
   scanf("%f", &nombre2);
   printf("Le produit des nombre que vous avez rentré est %f",
-         produit3_1(nombre1, nombre2));
+         produit(nombre1, nombre2));
   return 0;
 }
+*/
 
 // 2.
 
-float divise3_2(int nombre1, int nombre2) {
+/*
+float divise(int nombre1, int nombre2) {
   float resultat = (float)nombre1 / nombre2;
   return resultat;
 }
@@ -110,23 +110,25 @@ int ch3td1exercice3_2() {
   printf("Entrez un autre nombre\n");
   scanf("%d", &nombre2);
   printf("la division des 2 nombre que vous avez entré est %f",
-         divise3_2(nombre1, nombre2));
+         divise(nombre1, nombre2));
   return 0;
 }
+*/
 
 // 3.
 
-float produit3_3(float p1, float p2) {
+/*
+float produit(float p1, float p2) {
   float presultat = p1 * p2;
   return presultat;
 }
 
-float divise3_3(int d1, int d2) {
+float divise(int d1, int d2) {
   float dresultat = (float)d1 / d2;
   return dresultat;
 }
 
-int ch3td1exercice3_3() {
+int main() {
 
   float p1;
   float p2;
@@ -142,17 +144,19 @@ int ch3td1exercice3_3() {
   printf("Entrez un autre nombre qui divisera\n");
   scanf("%d", &d2);
 
-  printf("le résultat de la multiplication est %f\n", produit3_3(p1, p2));
-  printf("le résultat de la division est %f\n", divise3_3(d1, d2));
+  printf("le résultat de la multiplication est %f\n", prduit(p1, p2));
+  printf("le résultat de la division est %f\n", divise(d1, d2));
 }
+*/
 
 // 4.
 
-float moyenne3_4(float v1, float v2, float v3, float v4, float v5) {
+/*
+float moyenne(float v1, float v2, float v3, float v4, float v5) {
   return (v1 + v2 + v3 + v4 + v5) / 5.0;
 }
 
-int ch3td1exercice3_4() {
+int main() {
   float v1, v2, v3, v4, v5;
   printf("Entrez 5 nombres\n");
   scanf("%f", &v1);
@@ -161,22 +165,25 @@ int ch3td1exercice3_4() {
   scanf("%f", &v4);
   scanf("%f", &v5);
   printf("la moyenne de ces 5 nombres est %f\n",
-         moyenne3_4(v1, v2, v3, v4, v5));
+         moyenne(v1, v2, v3, v4, v5));
 }
+*/
 
 // 5.
 
-int puissancedetrois3_5(int exposant) {
+/*
+int puissance3(int exposant) {
   int resultat = pow(3, exposant);
   return resultat;
 }
 
-int ch3td1exercice3_5() {
+int main() {
   int exposant;
   printf("entrez le nombre de la puissance\n");
   scanf("%d", &exposant);
-  printf(" le résultat est %d", puissancedetrois3_5(exposant));
+  printf(" le résultat est %d", puissance3(exposant));
 }
+*/
 
 /////////////////////////
 /// By Guillemot Hugo ///

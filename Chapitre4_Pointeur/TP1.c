@@ -23,7 +23,8 @@
 
 // Réponse
 
-int ch4tp1question1() {
+/*
+int main() {
 
   float adr1 = -45.78;
   float adr2 = -638.89;
@@ -36,6 +37,7 @@ int ch4tp1question1() {
 
   return 0;
 }
+*/
 
 //////////////////
 /// Question 2 ///
@@ -45,7 +47,8 @@ int ch4tp1question1() {
 
 // Réponse
 
-void trie2(int tab[]) {
+/*
+void trie(int tab[]) {
   int i, j, tmp;
   for (i = 0; i < 6; i++) {
     for (j = i + 1; j < 6; j++) {
@@ -68,13 +71,13 @@ int maximum(int tab[]) {
   return max;
 }
 
-void montre2(int tab[]) {
+void affiche(int tab[]) {
     for (int i = 0; i < 6; i++) {
         printf("%d : %d son adresse est %p\n", i, tab[i], &tab[i]);
     }
 }
   
-int ch4tp1question2() {
+int main() {
 
   int tab[6];
   int *adr_deb = tab;
@@ -83,24 +86,25 @@ int ch4tp1question2() {
     scanf("%d", &tab[i]);
   }
 
-  trie2(tab);
+  trie(tab);
   printf("Voici le tableau ranger :\n");
-  montre2(tab);
+  affiche(tab);
 
   printf("Le maximum est %d et son adresse est %p\n", maximum(tab), &maximum);
   
   printf("Fin");
 }
+*/
 
 //////////////////
 /// Question 3 ///
 //////////////////
 
-// Soit une variable de type char * , écrire un programme qui saisit une chaîne
-// de caractères et qui la stocke dans cette variable, puis qui affiche les éléments de la chaîne caractère par caractère avec leur adresse .
+// Soit une variable de type char * , écrire un programme qui saisit une chaîne de caractères et qui la stocke dans cette variable, puis qui affiche les éléments de la chaîne caractère par caractère avec leur adresse .
 
 // Réponse
 
+/*
 int main() {
   char chaine[100];
   char *adr_chaine = chaine;
@@ -113,6 +117,7 @@ int main() {
   
   return 0;
 }
+*/
 
 //////////////////
 /// Question 4 ///

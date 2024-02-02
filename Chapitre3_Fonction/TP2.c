@@ -2,10 +2,6 @@
 /// Chapitre 3 - TP2 ///
 ////////////////////////
 
-// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction par
-// "main"
-// Les fonctions "ch3tp2questionN" remplace les "main".
-
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
@@ -22,25 +18,26 @@
 
 // Réponse
 
-int Multiple2_1(int nombre) { return (nombre % 2 == 0); }
+/*
+int multiple2(int nombre) { return (nombre % 2 == 0); }
 
-int Multiple3_1(int nombre) { return (nombre % 3 == 0); }
+int Multiple3(int nombre) { return (nombre % 3 == 0); }
 
-int ch3tp2question1() {
+int main() {
   int nombre;
   printf(
       "Entrez un nombre, je vais vous dire si il est multiple de 2,3 ou 6\n");
   scanf("%d", &nombre);
 
-  if (Multiple2_1(nombre)) {
+  if (multiple2(nombre)) {
     printf("%d est multiple de 2.\n", nombre);
   }
 
-  if (Multiple3_1(nombre)) {
+  if (multiple3(nombre)) {
     printf("%d est multiple de 3.\n", nombre);
   }
 
-  if (Multiple2_1(nombre) && Multiple3_1(nombre)) {
+  if (multiple2(nombre) && multiple3(nombre)) {
     printf("%d est multiple de 6.\n", nombre);
   }
 
@@ -50,6 +47,7 @@ int ch3tp2question1() {
 
   return 0;
 }
+*/
 
 //////////////////
 /// Question 2 ///
@@ -67,7 +65,8 @@ int ch3tp2question1() {
 
 // Réponse
 
-void transforme3(char *chaine, int *nbModifications) {
+/*
+void mintomaj(char *chaine, int *nbModifications) {
   *nbModifications = 0;
 
   for (int i = 0; chaine[i] != '\0'; i++) {
@@ -78,13 +77,13 @@ void transforme3(char *chaine, int *nbModifications) {
   }
 }
 
-int ch3tp2question3() {
+int main() {
   char maChaine[100];
   int modifications = 0;
 
   printf("Entrez une chaine de caracteres : ");
   fgets(maChaine, sizeof(maChaine), stdin);
-  transforme3(maChaine, &modifications);
+  mintomaj(maChaine, &modifications);
 
   printf("%s\n", maChaine);
 
@@ -92,6 +91,7 @@ int ch3tp2question3() {
 
   return 0;
 }
+*/
 
 //////////////////
 /// Question 4 ///
@@ -101,11 +101,10 @@ int ch3tp2question3() {
 
 // Réponse
 
-#include <stdio.h>
-
+/*
 #define Taillemax 20
 
-void lire4(int tab[], int *taille) {
+void lire(int tab[], int *taille) {
 
   *taille = 0;
   int valeur;
@@ -123,7 +122,7 @@ void lire4(int tab[], int *taille) {
   }
 }
 
-void affiche4(int tab[], int taille) {
+void affiche(int tab[], int taille) {
   printf("Tableau trié : ");
   for (int i = 0; i < taille; i++) {
     printf("%d ", tab[i]);
@@ -131,7 +130,7 @@ void affiche4(int tab[], int taille) {
   printf("\n");
 }
 
-int indice_min4(int tab[], int debut, int fin) {
+int indicemin(int tab[], int debut, int fin) {
   int indice_minimal = debut;
 
   for (int i = debut + 1; i <= fin; i++) {
@@ -143,7 +142,7 @@ int indice_min4(int tab[], int debut, int fin) {
   return indice_minimal;
 }
 
-void trier4(int tab[], int taille) {
+void trier(int tab[], int taille) {
   for (int i = 0; i < taille - 1; i++) {
     for (int j = 0; j < taille - i - 1; j++) {
       if (tab[j] > tab[j + 1]) {
@@ -155,21 +154,22 @@ void trier4(int tab[], int taille) {
   }
 }
 
-int ch3tp2question4() {
+int main() {
   int tab[Taillemax];
   int taille;
 
-  lire4(tab, &taille);
-  affiche4(tab, taille);
+  lire(tab, &taille);
+  affiche(tab, taille);
 
-  int indice_minimal = indice_min4(tab, 0, taille - 1);
+  int indice_minimal = indicemin(tab, 0, taille - 1);
   printf("indice_min : %d\n", indice_minimal);
 
-  trier4(tab, taille);
-  affiche4(tab, taille);
+  trier(tab, taille);
+  affiche(tab, taille);
 
   return 0;
 }
+*/
 
 /////////////////////////
 /// By Guillemot Hugo ///

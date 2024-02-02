@@ -2,9 +2,6 @@
 /// Chapitre 3 - Cours ///
 //////////////////////////
 
-// Pour éxécuter un des programme, il faudra appeler la fonction voulue dans une
-// fonction main. Les fonctions "ch3coursexerciceN" remplace les "main".
-
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
@@ -18,21 +15,25 @@
 
 // Réponse
 
-int ch3coursexercice1() {
+/*
+
+int valeur_absolue(int valeur) {
+  if (valeur < 0) {
+    valeur = valeur * -1;
+  }
+}
+int main() {
 
   int valeur;
 
   printf("Entrez une valeur\n");
   scanf("%d", &valeur);
 
-  if (valeur < 0) {
-    valeur = valeur * -1;
-  }
-
-  printf("La valeur absolue de votre nombre est %d\n", valeur);
+  printf("La valeur absolue de votre nombre est %d\n", valeur_absoulue(valeur));
 
   return 0;
 }
+*/
 
 //////////////////
 /// Exercice 2 ///
@@ -43,7 +44,14 @@ int ch3coursexercice1() {
 
 // Réponse
 
-int coursexercice2() {
+
+/*
+int puissance(x,y) {
+  int result = pow(x, y);
+  return result;
+}
+
+int main() {
 
   int x, y;
 
@@ -52,12 +60,11 @@ int coursexercice2() {
   printf("Entrez la valeur de y\n");
   scanf("%d", &y);
 
-  int result = pow(x, y);
-
-  printf("Le resultat de %d à la puissance %d est %d\n", x, y, result);
+  printf("Le resultat de %d à la puissance %d est %d\n", x, y,puissance(x,y));
 
   return 0;
 }
+*/
 
 /////////////////////////
 /// By Guillemot Hugo ///

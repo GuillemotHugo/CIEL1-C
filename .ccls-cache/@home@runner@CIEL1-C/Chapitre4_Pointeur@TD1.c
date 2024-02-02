@@ -2,10 +2,6 @@
 /// Chapitre 4 - TD1 ///
 ////////////////////////
 
-/// Pour éxécuter un des programme, il faudra remplacer le nom de la fonction
-/// par "main"
-// Les fonctions "ch4td1questionN" remplace les "main".
-
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
@@ -89,7 +85,8 @@
 
 // Réponse
 
-void saisie3(int *val, int *nb) {
+/*
+void saisie(int *val, int *nb) {
     int i = 0;
     do {
         scanf("%d", val);
@@ -100,31 +97,32 @@ void saisie3(int *val, int *nb) {
     *nb = i - 1;
 }
 
-void affiche3(int *val, int nb) {
+void affiche(int *val, int nb) {
     for (int i = 0; i < nb; i++) {
         printf("%d ,", *val);
         val++;
     }
 }
 
-int ch4td1question3() {
+int main() {
   
     int valeurs[20];
     int nombreDeValeurs;
 
-    saisie3(valeurs, &nombreDeValeurs);
+    saisie(valeurs, &nombreDeValeurs);
 
     int *pValeurs = valeurs;
   
     printf("\n");
     printf("Voici les valeurs saisies :\n ");
   
-    affiche3(pValeurs, nombreDeValeurs);
+    affiche(pValeurs, nombreDeValeurs);
 
     printf("vous avez saisie %d valeur", nombreDeValeurs);
 
     return 0;
 }
+*/
 
 /////////////////////////
 /// By Guillemot Hugo ///
