@@ -123,32 +123,58 @@ int main() {
 /// Question 4 ///
 //////////////////
 
-// tab1 et tab2 sont des variables locales à main:
-// int tab1[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19};
-// int tab2[] = {-19,18,-17,16,-15,14,-13,12,-11,10,-9,8,-7,6,-5,4,-3,2,-1,0};
-// Ecrire une fonction de prototype void affiche(int *tab,int i,int j) qui
-// permet d'afficher les i*j nombres suivant un tableau i x j(à l’affichage i
-// lignes et j colonnes). La mettre en oeuvre dans main() pour afficher tab1 et
-// tab2.
+/*
+tab1 et tab2 sont des variables locales à main:
+int tab1[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19};
+int tab2[] = {-19,18,-17,16,-15,14,-13,12,-11,10,-9,8,-7,6,-5,4,-3,2,-1,0};
+Ecrire une fonction de prototype void affiche(int *tab,int i,int j) qui
+permet d'afficher les i*j nombres suivant un tableau i x j(à l’affichage i
+lignes et j colonnes). La mettre en oeuvre dans main() pour afficher tab1 et
+tab2.
+*/
 
 // Réponse
 
-int ch4tp1question4() {}
 
 //////////////////
 /// Question 5 ///
 //////////////////
 
-// Calculer et afficher les racines de ax2+bx+c=0. Une fonction de prototype
-// void saisie(float *aa,float *bb,float *cc) permet de saisir a,b,c. Une
-// fonction de prototype float *calcul(float aa,float bb,float cc) exécute les
-// calculs et renvoie les résultats. a, b, c sont des variables locales à
-// main(); main() se contente de saisir a,b et c puis d'appeler saisie et calcul
-// et d’afficher les solutions.
+// Calculer et afficher les racines de ax2+bx+c=0. Une fonction de prototype void saisie(float *aa,float *bb,float *cc) permet de saisir a,b,c. Une fonction de prototype float *calcul(float aa,float bb,float cc) exécute les calculs et renvoie les résultats. a, b, c sont des variables locales à main(); main() se contente de saisir a,b et c puis d'appeler saisie et calcul et d’afficher les solutions.
+
 
 // Réponse
 
-int ch4tp1question5() {}
+/*
+void saisie(float *aa,float *bb,float *cc) {
+  printf("Saisir a, b, c\n");
+  scanf("%f %f %f", aa, bb, cc);
+}
+
+float *calcul(float aa,float bb,float cc) {
+  int delta= pow(bb,2)-4*aa*cc;
+  
+  if (delta<0) {
+    printf("Il n'y a pas de solution");
+  } else if (delta==0) {
+    printf("Il y a une solution\n");
+    float x1=-bb/2*aa;
+    printf("x1 = %f",x1);
+  } else {
+    printf("il y a 2 solutios\n");
+    float x1=(-bb+sqrt(delta))/2*aa;
+    float x2=(-bb-sqrt(delta))/2*aa;
+    printf("x1 = %f\n",x1);
+    printf("x2 = %f\n",x2);
+  }  
+}
+
+int main() {
+  float a, b, c;
+  saisie(&a,&b,&c);
+  calcul(a,b,c);
+}
+*/
 
 /////////////////////////
 /// By Guillemot Hugo ///
